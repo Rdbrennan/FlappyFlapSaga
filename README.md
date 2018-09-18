@@ -36,7 +36,7 @@ Things I learned:
 
 ### Project 4 - Scoring and Saving
 
-![Scoring and Saving]()
+![Scoring and Saving](https://media.giphy.com/media/3LxLXi3i0uymIarM0J/giphy.gif)
 
 Things I learned:
   ●
