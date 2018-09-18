@@ -1,7 +1,6 @@
 # Weclome to
 
-![FlappyFlapLogo](https://raw.githubusercontent.com/Rdbrenna/FlappyFlapSaga/master/FlappyLogoIntro.png)
-
+![FlappyFlapLogo](https://raw.githubusercontent.com/Rdbrenna/FlappyFlapSaga/master/Various%20Images/FlappyLogoIntro.png)
 
 # Flappy Flap Saga
 A recreation of the sensational Flappy Bird game!
