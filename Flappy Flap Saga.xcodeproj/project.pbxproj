@@ -15,6 +15,9 @@
 		682A75FC1BF1865900BB7243 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A75FB1BF1865900BB7243 /* AVFoundation.framework */; };
 		68304C2C1EBC823C00CB52A3 /* Review_Page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68304C2B1EBC823C00CB52A3 /* Review_Page.jpg */; };
 		68304C2E1EC01D9600CB52A3 /* rsz_em.png in Resources */ = {isa = PBXBuildFile; fileRef = 68304C2D1EC01D9600CB52A3 /* rsz_em.png */; };
+		68442DB32151A7E500824C1A /* HighScoreScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68442DB22151A7E500824C1A /* HighScoreScene.swift */; };
+		68442DB52151A7F900824C1A /* FlappyFlapVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68442DB42151A7F900824C1A /* FlappyFlapVid.swift */; };
+		68442DB72151A80300824C1A /* FlappyFlapIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68442DB62151A80300824C1A /* FlappyFlapIntro.swift */; };
 		68622D3F1C07C2B40077DA3A /* output_u7Cbt3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 68622D3E1C07C2B40077DA3A /* output_u7Cbt3.mp4 */; };
 		68622E181C12142A0077DA3A /* sfx_die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68622E131C12142A0077DA3A /* sfx_die.mp3 */; };
 		68622E191C12142A0077DA3A /* sfx_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68622E141C12142A0077DA3A /* sfx_hit.mp3 */; };
@@ -68,10 +71,7 @@
 		68622E811C12AA270077DA3A /* waterflap2copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68622E4E1C12AA270077DA3A /* waterflap2copy@2x.png */; };
 		68622E821C12AA270077DA3A /* waterflap3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68622E4F1C12AA270077DA3A /* waterflap3.png */; };
 		68622E831C12AA270077DA3A /* waterflap3copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68622E501C12AA270077DA3A /* waterflap3copy@2x.png */; };
-		68A525E11C1E9FCF0056B349 /* HighScoreScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A525E01C1E9FCF0056B349 /* HighScoreScene.swift */; };
 		68A525E31C1EAB8C0056B349 /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A525E21C1EAB8C0056B349 /* HighScoreController.swift */; };
-		68B448171BF54719008FA074 /* FlappyFlapIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B448161BF54719008FA074 /* FlappyFlapIntro.swift */; };
-		68D4A2831C03A93900B844AD /* FlappyFlapVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4A2821C03A93900B844AD /* FlappyFlapVid.swift */; };
 		68D9B9C21BFD2BB8006F3268 /* GameViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D9B9C11BFD2BB8006F3268 /* GameViewController1.swift */; };
 		68D9B9C51BFE5821006F3268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D9B9C31BFE5821006F3268 /* Main.storyboard */; };
 		68D9B9C71BFFEC20006F3268 /* RateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D9B9C61BFFEC20006F3268 /* RateController.swift */; };
@@ -102,6 +102,9 @@
 		682A75FB1BF1865900BB7243 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		68304C2B1EBC823C00CB52A3 /* Review_Page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Review_Page.jpg; sourceTree = "<group>"; };
 		68304C2D1EC01D9600CB52A3 /* rsz_em.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_em.png; sourceTree = "<group>"; };
+		68442DB22151A7E500824C1A /* HighScoreScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreScene.swift; sourceTree = "<group>"; };
+		68442DB42151A7F900824C1A /* FlappyFlapVid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlappyFlapVid.swift; sourceTree = "<group>"; };
+		68442DB62151A80300824C1A /* FlappyFlapIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlappyFlapIntro.swift; sourceTree = "<group>"; };
 		68622D3E1C07C2B40077DA3A /* output_u7Cbt3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = output_u7Cbt3.mp4; sourceTree = "<group>"; };
 		68622E131C12142A0077DA3A /* sfx_die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfx_die.mp3; sourceTree = "<group>"; };
 		68622E141C12142A0077DA3A /* sfx_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfx_hit.mp3; sourceTree = "<group>"; };
@@ -155,10 +158,7 @@
 		68622E4E1C12AA270077DA3A /* waterflap2copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waterflap2copy@2x.png"; sourceTree = "<group>"; };
 		68622E4F1C12AA270077DA3A /* waterflap3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterflap3.png; sourceTree = "<group>"; };
 		68622E501C12AA270077DA3A /* waterflap3copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waterflap3copy@2x.png"; sourceTree = "<group>"; };
-		68A525E01C1E9FCF0056B349 /* HighScoreScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HighScoreScene.swift; path = ../HighScoreScene.swift; sourceTree = "<group>"; };
 		68A525E21C1EAB8C0056B349 /* HighScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
-		68B448161BF54719008FA074 /* FlappyFlapIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlappyFlapIntro.swift; path = ../FlappyFlapIntro.swift; sourceTree = "<group>"; };
-		68D4A2821C03A93900B844AD /* FlappyFlapVid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlappyFlapVid.swift; path = ../FlappyFlapVid.swift; sourceTree = "<group>"; };
 		68D9B9C11BFD2BB8006F3268 /* GameViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController1.swift; sourceTree = "<group>"; };
 		68D9B9C41BFE5821006F3268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68D9B9C61BFFEC20006F3268 /* RateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateController.swift; sourceTree = "<group>"; };
@@ -211,11 +211,11 @@
 				682A75841BF181E300BB7243 /* AppDelegate.swift */,
 				682A758A1BF181E300BB7243 /* GameViewController.swift */,
 				682A75881BF181E300BB7243 /* GameScene.swift */,
-				68A525E01C1E9FCF0056B349 /* HighScoreScene.swift */,
+				68442DB22151A7E500824C1A /* HighScoreScene.swift */,
 				68A525E21C1EAB8C0056B349 /* HighScoreController.swift */,
 				68D9B9C11BFD2BB8006F3268 /* GameViewController1.swift */,
-				68B448161BF54719008FA074 /* FlappyFlapIntro.swift */,
-				68D4A2821C03A93900B844AD /* FlappyFlapVid.swift */,
+				68442DB62151A80300824C1A /* FlappyFlapIntro.swift */,
+				68442DB42151A7F900824C1A /* FlappyFlapVid.swift */,
 				68D9B9C61BFFEC20006F3268 /* RateController.swift */,
 				68D9B9C31BFE5821006F3268 /* Main.storyboard */,
 				68F730991EB1085A00D5B371 /* FlappyFlapSagaCoreData.xcdatamodeld */,
@@ -491,14 +491,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				682A75891BF181E300BB7243 /* GameScene.swift in Sources */,
-				68A525E11C1E9FCF0056B349 /* HighScoreScene.swift in Sources */,
 				68D9B9C21BFD2BB8006F3268 /* GameViewController1.swift in Sources */,
 				68A525E31C1EAB8C0056B349 /* HighScoreController.swift in Sources */,
+				68442DB72151A80300824C1A /* FlappyFlapIntro.swift in Sources */,
 				682A758B1BF181E300BB7243 /* GameViewController.swift in Sources */,
+				68442DB32151A7E500824C1A /* HighScoreScene.swift in Sources */,
 				68F7309B1EB1085A00D5B371 /* FlappyFlapSagaCoreData.xcdatamodeld in Sources */,
 				682A75851BF181E300BB7243 /* AppDelegate.swift in Sources */,
-				68D4A2831C03A93900B844AD /* FlappyFlapVid.swift in Sources */,
-				68B448171BF54719008FA074 /* FlappyFlapIntro.swift in Sources */,
+				68442DB52151A7F900824C1A /* FlappyFlapVid.swift in Sources */,
 				68D9B9C71BFFEC20006F3268 /* RateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
