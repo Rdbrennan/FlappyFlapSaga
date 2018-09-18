@@ -13,6 +13,7 @@ A recreation of the sensational Flappy Bird game!
 ![Spash Screen Video](https://media.giphy.com/media/1ykCOs9u7njOfZNwXG/giphy.gif)
 
 Things I learned:
+ 
   ● Photoshop pixelation and videography animation editing
   
   ● Frame-by-frame timing
