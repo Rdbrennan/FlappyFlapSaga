@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5cg-C0-0yi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LVB-YS-i5n" customClass="GameViewController" customModule="Flappy_Flap_Saga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hcp-sC-I2i"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkG-D1-iY1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCU-2e-JAu" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iCU-2e-JAu" secondAttribute="trailing" id="6Vu-SY-lD5" userLabel="trailing = Banner View.trailing "/>
+                            <constraint firstItem="iCU-2e-JAu" firstAttribute="top" secondItem="Hcp-sC-I2i" secondAttribute="bottom" constant="597" id="ADH-71-gzb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iCU-2e-JAu" secondAttribute="bottom" id="Hjy-7g-C1H"/>
+                            <constraint firstItem="iCU-2e-JAu" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" id="KbE-YX-0Au"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="iCU-2e-JAu" id="8Wh-UD-Uxo"/>
+                        <outlet property="skView" destination="bdc-N1-crn" id="MUy-oa-vO9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626.39999999999998" y="165.06746626686657"/>
+        </scene>
+        <!--Rate Controller-->
+        <scene sceneID="h49-oy-klz">
+            <objects>
+                <viewController id="Tb2-oR-Ns1" customClass="RateController" customModule="Flappy_Flap_Saga" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x9G-PP-oj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oor-nS-wa2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eHn-FY-u1I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Review_Page.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FBD-oQ-zkl">
+                                <rect key="frame" x="27.5" y="46.5" width="320" height="574"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="574" id="D46-Sv-apc"/>
+                                    <constraint firstAttribute="width" constant="320" id="x5w-2m-bfB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQw-pa-pAE">
+                                <rect key="frame" x="5" y="20" width="61" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="JVa-6p-JoC"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ERX-pw-ODK" kind="show" id="iun-kT-Xpi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oor-nS-wa2" firstAttribute="top" secondItem="lQw-pa-pAE" secondAttribute="bottom" constant="513" id="4K1-pK-duk"/>
+                            <constraint firstItem="FBD-oQ-zkl" firstAttribute="centerX" secondItem="eHn-FY-u1I" secondAttribute="centerX" id="UyP-X7-FPx"/>
+                            <constraint firstItem="lQw-pa-pAE" firstAttribute="leading" secondItem="eHn-FY-u1I" secondAttribute="leadingMargin" constant="-11" id="hNJ-0j-wdf"/>
+                            <constraint firstItem="FBD-oQ-zkl" firstAttribute="centerY" secondItem="eHn-FY-u1I" secondAttribute="centerY" id="vuD-Jy-ZbB"/>
+                            <constraint firstItem="lQw-pa-pAE" firstAttribute="top" secondItem="x9G-PP-oj6" secondAttribute="bottom" id="x2s-fY-N1g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WJ-jE-jlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="1204"/>
+        </scene>
+        <!--Game View Controller1-->
+        <scene sceneID="Vsv-HK-xZP">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController1" id="ERX-pw-ODK" customClass="GameViewController1" customModule="Flappy_Flap_Saga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eyT-Gd-lR7"/>
+                        <viewControllerLayoutGuide type="bottom" id="xRs-0Y-5Ib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JVC-Wl-QoD" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HFi-uN-bkP">
+                                <rect key="frame" x="60" y="243" width="200" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N8x-Z0-Atz">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8o-0c-piw">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                                <state key="normal" image="StartLogo.png"/>
+                                                <connections>
+                                                    <segue destination="LVB-YS-i5n" kind="show" id="G6a-yC-sZF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVr-wL-1Ju">
+                                                <rect key="frame" x="0.0" y="100" width="200" height="100"/>
+                                                <state key="normal" image="RateLogo.png"/>
+                                                <connections>
+                                                    <segue destination="Tb2-oR-Ns1" kind="show" id="XDu-9v-73s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmd-Av-E5Z">
+                                                <rect key="frame" x="0.0" y="200" width="200" height="100"/>
+                                                <state key="normal" image="ShareLogo.png"/>
+                                                <connections>
+                                                    <action selector="facebookBtn:" destination="ERX-pw-ODK" eventType="touchUpInside" id="8jw-Gi-gpu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N8x-Z0-Atz" firstAttribute="leading" secondItem="HFi-uN-bkP" secondAttribute="leading" id="aQI-Qa-4qF"/>
+                                    <constraint firstAttribute="trailing" secondItem="N8x-Z0-Atz" secondAttribute="trailing" id="lM0-oi-b0V"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="FlappyFlapIntro">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="HFi-uN-bkP" firstAttribute="centerX" secondItem="JVC-Wl-QoD" secondAttribute="centerX" id="9hq-5i-gDb"/>
+                            <constraint firstItem="xRs-0Y-5Ib" firstAttribute="top" secondItem="HFi-uN-bkP" secondAttribute="bottom" constant="25" id="A8d-6F-2dI"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="skView" destination="JVC-Wl-QoD" id="JQs-0E-vLi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTH-8s-Cta" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="166"/>
+        </scene>
+        <!--Flappy Flap Vid-->
+        <scene sceneID="qoJ-32-Svg">
+            <objects>
+                <viewController id="5cg-C0-0yi" customClass="FlappyFlapVid" customModule="Flappy_Flap_Saga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R6z-Ge-iOE"/>
+                        <viewControllerLayoutGuide type="bottom" id="R6m-iL-SEQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TcK-Ao-Kgv" userLabel="Sk View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6to-Sm-uT3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1398" y="166"/>
+        </scene>
+        <!--High Score Controller-->
+        <scene sceneID="TSc-wr-egp">
+            <objects>
+                <viewController storyboardIdentifier="HighScoreController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O77-Zt-9EO" customClass="HighScoreController" customModule="Flappy_Flap_Saga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XRF-uL-SmI"/>
+                        <viewControllerLayoutGuide type="bottom" id="riL-Ge-bOF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vyc-I0-4Gz" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVX-K9-IWq">
+                                <rect key="frame" x="87.5" y="516" width="200" height="100"/>
+                                <state key="normal" image="Flappymenu.png"/>
+                                <connections>
+                                    <segue destination="ERX-pw-ODK" kind="show" id="d5r-zT-Pue"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kVX-K9-IWq" firstAttribute="centerX" secondItem="vyc-I0-4Gz" secondAttribute="centerX" id="Xw7-Lb-Dhf"/>
+                            <constraint firstItem="riL-Ge-bOF" firstAttribute="top" secondItem="kVX-K9-IWq" secondAttribute="bottom" constant="51" id="hhS-Kw-hB3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="skView" destination="vyc-I0-4Gz" id="8sx-3N-vcM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sg3-r3-ZrG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="-694"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Flappymenu.png" width="200" height="100"/>
+        <image name="RateLogo.png" width="200" height="100"/>
+        <image name="Review_Page.jpg" width="640" height="1138"/>
+        <image name="ShareLogo.png" width="200" height="100"/>
+        <image name="StartLogo.png" width="200" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="d5r-zT-Pue"/>
+    </inferredMetricsTieBreakers>
+</document>

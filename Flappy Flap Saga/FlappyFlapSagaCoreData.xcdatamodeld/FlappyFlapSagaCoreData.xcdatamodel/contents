@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GameCenter" representedClassName="GameCenter" syncable="YES" codeGenerationType="class">
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HighScore" representedClassName="HighScore" syncable="YES" codeGenerationType="class">
+        <attribute name="achievmentMedal" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="currentScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="highestScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HighScore" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="GameCenter" positionX="-36" positionY="36" width="128" height="75"/>
+    </elements>
+</model>

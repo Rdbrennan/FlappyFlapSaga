@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ERX-pw-ODK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="Flappy_Flap_Saga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vS-Pg-wKU">
+                                <rect key="frame" x="-33" y="675" width="480" height="66"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1vS-Pg-wKU" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="DpG-fx-sYP"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="skView" destination="bdc-N1-crn" id="MUy-oa-vO9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ni6-bs-m3q">
+            <objects>
+                <viewController id="irX-x0-1R1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7xj-vU-Fj0"/>
+                        <viewControllerLayoutGuide type="bottom" id="YMa-SW-WZ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LcL-83-iy7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1k-ZW-QOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-323" y="1061"/>
+        </scene>
+        <!--Game View Controller1-->
+        <scene sceneID="Vsv-HK-xZP">
+            <objects>
+                <viewController id="ERX-pw-ODK" customClass="GameViewController1" customModule="Flappy_Flap_Saga" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3CL-ej-UEi"/>
+                        <viewControllerLayoutGuide type="bottom" id="hys-CL-qHy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JVC-Wl-QoD" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHu-Zh-fOC">
+                                <rect key="frame" x="0.0" y="350" width="200" height="100"/>
+                                <state key="normal" image="StartLogo.png"/>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="show" id="EMK-8Y-cnr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LK-KL-3DM">
+                                <rect key="frame" x="139" y="322" width="200" height="100"/>
+                                <state key="normal" image="RateLogo.png"/>
+                                <connections>
+                                    <segue destination="irX-x0-1R1" kind="show" id="BO8-3R-Hyf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUY-Jl-k5d">
+                                <rect key="frame" x="139" y="381" width="200" height="100"/>
+                                <state key="normal" image="ScoreLogo.png"/>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" semanticContentAttribute="forceLeftToRight" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKP-d1-QKi">
+                                <rect key="frame" x="-80" y="502" width="480" height="66"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="skView" destination="JVC-Wl-QoD" id="JQs-0E-vLi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTH-8s-Cta" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-323" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RateLogo.png" width="200" height="100"/>
+        <image name="ScoreLogo.png" width="200" height="100"/>
+        <image name="StartLogo.png" width="200" height="100"/>
+    </resources>
+</document>
