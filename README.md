@@ -26,7 +26,7 @@ Things I learned:
 
 ### Project 3 - Gameplay with Spritekit Physics Body
 
-![Physics Gameplay]()
+![Physics Gameplay](https://media.giphy.com/media/3fiwFfrBSTj2y31S4T/giphy.gif)
 
 Things I learned:
   ● 
