@@ -17,6 +17,8 @@ Things I learned:
   ● Photoshop pixelation and videography animation editing
   
   ● Frame-by-frame timing
+  
+#
 
 ### Project 2 - Menu Views
 
