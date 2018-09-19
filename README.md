@@ -8,6 +8,7 @@ A recreation of the sensational Flappy Bird game!
 
 # Projects
 
+
 ### Project 1 - Splash Screen Video
 
 ![Spash Screen Video](https://media.giphy.com/media/1ykCOs9u7njOfZNwXG/giphy.gif)
@@ -57,6 +58,7 @@ Things I learned:
   ● Storing and pulling user data
   
   ● Scoring and Swift arithmetic
+  
   
   
 # License
