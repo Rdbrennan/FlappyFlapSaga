@@ -29,6 +29,8 @@ Things I learned:
   ● Xcode view hierarchy and transitioning
   
   ● Spritekit scene presentation and release
+  
+#
 
 ### Project 3 - Gameplay
 
@@ -41,6 +43,8 @@ Things I learned:
   ● Object movement and orientation
   
   ● Looping to reset game for user
+    
+#
 
 ### Project 4 - Scoring and Saving
 
